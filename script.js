@@ -9,8 +9,15 @@ let tot = document.getElementById("total")
 element.addEventListener("click", myFunction);
 
 function myFunction() {
-   
-    if(total >20)
+    score =  Math.floor(Math.random() * 6) + 1;
+    document.getElementById("score").innerHTML =score;
+    console.log(score);
+if(score < 2 && total < 2){
+    win.innerHTML = 'YOU LOOSE';
+    roll.classList.add("display")
+}
+
+   else  if(total >20)
     {
    
             win.innerHTML = 'CONGRATULATIONS! YOU WON';
@@ -24,8 +31,10 @@ document.getElementById("score").innerHTML =score;
        // roll.style.visibility =" visible";
   
 }
-else{
-    roll.classList.remove("display")
+
+
+else {
+    
     score =  Math.floor(Math.random() * 6) + 1;
     document.getElementById("score").innerHTML =score;
     //roll.style.visibility =" visible";
@@ -33,9 +42,8 @@ else{
     total += score;
     console.log(total);
    tot.innerHTML = total;
-}
-
 
 }
 
 
+}
