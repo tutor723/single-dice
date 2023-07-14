@@ -1,21 +1,61 @@
 #box{
-    height:450px;
+    height:550px;
     width:450px;
     background-color: aquamarine;
     margin:auto;
 }
-#roll{
-    margin-left: 100px;
-    margin-top: 50px;
-}
+#start ,#roll{
+     margin-left:10px;
+    margin-top: 80px; 
+    background-color: red;
+    height: 50px;
+    width:70px;
+    border-radius: 20px;
+    color: aliceblue;
 
+    
+}
+#scor, #total{
+    
+    margin-top: 30px;
+
+}
+#total{
+    background-color: bisque;
+  
+}
 
 #dice{
     height:100px;
     width:100px;
-    background-color:yellow;
+    background-color:black;
     margin:auto;
+    margin-top: 50px;
+  
 }
 .display{
   visibility: hidden ;
+}
+
+#start{
+    visibility: hidden;
+}
+body {
+    background-image: url(./image/dice.png );
+    background-size: cover; 
+  background-color: antiquewhite;
+  
+    
+    }
+
+    @import url('https://fonts.googleapis.com/css?family=B612+Mono');
+
+html, body,#name {
+    font-family: "B612 Mono", monospace;
+    text-align: center;
+}
+#win{
+    font-size: x-large;
+  color: brown;
+  
 }
